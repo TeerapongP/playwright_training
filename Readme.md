@@ -6,22 +6,11 @@ This repository contains materials, examples, and exercises for learning **Playw
 
 - `example.spec.ts` - Introductory scripts and fundamental assertions for interacting with basic elements using the Playwright framework.
 - `best-practices.spec.ts` - Demonstrates key best practices including correct locators (`getByRole`), auto-waiting, handling network idle, and proper navigation strategies.
-- `workshop-flow.spec.ts` - Comprehensive end-to-end (E2E) testing flow that replicates a real-world user journey.
 - `pages/` - Implementation of the **Page Object Model (POM)** pattern. Contains abstractions for different screens in the web application such as:
   - `RegisterPage.ts`
   - `LoginPage.ts`
   - `HomePage.ts`
   - `BookingPage.ts`
-
-## 🚀 End-to-End Flow Demo
-
-The `/workshop-flow.spec.ts` contains a complete business logic flow for a concert booking application:
-1. **Registration:** Signing up a new user.
-2. **Login:** Authenticating into the system.
-3. **Selection:** Validating available events and picking a concert.
-4. **Booking:** Reserving a ticket, selecting a tier, providing attendee information.
-5. **Payment:** Verifying payment summary and submitting credit card information.
-6. **Success Verification:** Assuring the successful booking confirmation.
 
 ## 🛠 Prerequisites & Installation
 
@@ -42,9 +31,6 @@ To run the Playwright test suite:
 ```bash
 # Run all tests in headless mode
 npx playwright test
-
-# Run a specific test file
-npx playwright test workshop-flow.spec.ts
 
 # Run tests in UI mode for debugging
 npx playwright test --ui
