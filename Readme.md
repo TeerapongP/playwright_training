@@ -6,11 +6,6 @@ This repository contains materials, examples, and exercises for learning **Playw
 
 - `example.spec.ts` - Introductory scripts and fundamental assertions for interacting with basic elements using the Playwright framework.
 - `best-practices.spec.ts` - Demonstrates key best practices including correct locators (`getByRole`), auto-waiting, handling network idle, and proper navigation strategies.
-- `pages/` - Implementation of the **Page Object Model (POM)** pattern. Contains abstractions for different screens in the web application such as:
-  - `RegisterPage.ts`
-  - `LoginPage.ts`
-  - `HomePage.ts`
-  - `BookingPage.ts`
 
 ## 🛠 Prerequisites & Installation
 
