@@ -1,21 +1,5 @@
-import { test, expect, type Page } from '@playwright/test';
-
-class ConcertsPage {
-    constructor(private page: Page) { }
-
-    async goto() {
-        await this.page.goto('/concerts');
-    }
-
-    async bookTicket() {
-        await this.page.getByRole('button', { name: 'จองตั๋ว' }).click();
-    }
-
-    async getHeading() {
-        return this.page.getByRole('heading', { name: 'คอนเสิร์ตที่กำลังมา' });
-    }
-}
-
+import { test, expect } from '@playwright/test';
+import { ConcertsPage } from '../pages/ConcertsPage';
 
 test('1. getByRole / getByLabel แทน CSS selector', async ({ page }) => {
     await page.goto('/concerts');
