@@ -8,4 +8,4 @@ node_modules/
 /playwright/.auth/
 
 # Ignore specific workshop file
-playwrite_training/workshop-flow.spec.ts
+# playwrite_training/workshop-flow.spec.ts
